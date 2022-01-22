@@ -1,0 +1,57 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@media (max-width: 590px) {
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.btn {
+    padding: 1.5rem 2rem;
+    background-color: $light-blue;
+    border-radius: 1rem;
+    color: $gray;
+    font-weight: 600;
+    transition: .3s;
+
+    &:hover {
+        background-color: #2d81ff;
+        color: $white;
+    }
+
+    & i {
+        margin-right: 5px;
+    }
+}
