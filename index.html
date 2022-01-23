@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Me llamo Nicolas Cajaraville, soy desarollador web y en esta web presento mis trabajos">
+    <meta name="keywords" content="programador, programacion web, trabajo en programacion y desarollo web, programador web argentina, desarrollador frontend, frontend argentina">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="src/css/swiper.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="shortcut icon" href="src/images/N.png" type="image/x-icon">
     <title>Nicolás Cajaraville</title>
@@ -20,13 +25,12 @@
                         <a href="index.html"><img src="src/images/logo.png" alt="logo"></a>
                     </div>
                     <ul class="navbar__links" id="links">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Sobre Mi</a></li>
-                        <li><a href="#">Proyectos</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Sobre Mi</a></li>
+                        <li><a href="#proyects">Proyectos</a></li>
                         <div class="navbar__networks">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ncajaraville/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/ncajaraville7" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </ul>
                     
@@ -39,26 +43,163 @@
             </div>
         </nav>
 
-        <section class="home">
+        <div class="background">
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+        </div>
+
+        <section class="home" id="home">
             <h1>Hola, <br> Soy <span>Nicolás.</span> <br> Frontend Developer </h1>
             
             <div class="button">
-                <a href="#" class="btn"><i class="fab fa-whatsapp"></i> Contactame</a>
+                <a href="https://wa.link/5sbm27" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> Contactame</a>
             </div>
 
             <div class="home__networks">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ncajaraville/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ncajaraville7" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </section>
     </header>
 
-    <div class="background">
-        <div id='stars'></div>
-        <div id='stars2'></div>
-        <div id='stars3'></div>
-    </div>
+    <main>
+        <section class="container" id="about">
+            <article class="about-me">
+                <div class="about">
+                    <h2 class="container">SOBRE MI</h2>
+                    <p class="container">Mi nombre es Nicolás Cajaraville, soy desarrollador Frontend Junior y me encuentro buscando mi primera experiencia laboral dentro de una empresa. <br> Me concidero una persona que pone a disposición todas sus capacidades y habilidades para cumplir con las tareas asignadas de forma eficiente y responsable. Por otra parte, es mi objetivo cumplir con las metas establecidas y superarlas, adquirir experiencia y nuevos conocimientos. <br>
+                    Y actualmente me encuentro finalizando el curso de React JS en la plataforma de Coder House.</p>
+                </div>
+                <div class="technologies">
+                    <h2 class="container">TECNOLOGÍAS</h2>
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="src/images/html.png" alt="logo"><p>HTML</p></div>
+                        <div class="swiper-slide"><img src="src/images/css.png" alt="logo"><p>CSS</p></div>
+                        <div class="swiper-slide"><img src="src/images/sass.png" alt="logo"><p>SASS</p></div>
+                        <div class="swiper-slide"><img src="src/images/bootstrap.png" alt="logo"><p>BOOTSTRAP</p></div>
+                        <div class="swiper-slide"><img src="src/images/js.png" alt="logo"><p>JAVASCRIPT</p></div>
+                        <div class="swiper-slide"><img src="src/images/npm.png" alt="logo"><p>NPM</p></div>
+                        <div class="swiper-slide"><img src="src/images/react.png" alt="logo"><p>REACT JS</p></div>
+                        <div class="swiper-slide" ><img src="src/images/tailwind.png" alt="logo" class="tailwind"><p>TAILWIND</p></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
 
+        <section class="proyects container" id="proyects">
+            <h2>MIS PROYECTOS</h2>
+            <article class="proyects__flex" data-aos="fade-right">
+                <div class="proyects__image">
+                    <img src="src/images/primeburger.png" alt="prime burger">
+                </div>
+                <div class="proyects__data">
+                    <p>Prime Burguer es un proyecto sobre una hamburgueseria ficticia realizada para el curso de desarrollo web de Coder House. El mismo fue desarrollado en HTML, SASS Y BOOTSTRAP</p>
+
+                    <div class="proyects__data__networks">
+                        <a class="tooltip" href="https://ncajaraville7.github.io/primeburger/" target="_blank">
+                            <i class="fas fa-link"></i>
+                            <span class="tooltip-box">Ver Proyecto</span>
+                        </a>
+    
+                        <a href="https://github.com/ncajaraville7/primeburger" target="_blank" class="tooltip">
+                            <i class="fab fa-github"></i>
+                            <span class="tooltip-box">Ver Código</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="proyects__flex" data-aos="fade-left">
+                <div class="proyects__image">
+                    <img class="twitter-img" src="src/images/twitterclon.png" alt="Twitter Clon">
+                </div>
+                <div class="proyects__data">
+                    <p>Clon de twitter desarrollado en HTML, SASS Y JAVASCRIPT. <br>En la misma una vez que se comienza a escribir se habilita el boton para twittear y también se simulan los me gusta, comentarios y retweet. <br> También dando click sobre los tweets podemos borrarlos. </p>
+
+                    <div class="proyects__data__networks">
+                        <a class="tooltip" href="https://ncajaraville7.github.io/twitter-clon/" target="_blank">
+                            <i class="fas fa-link"></i>
+                            <span class="tooltip-box">Ver Proyecto</span>
+                        </a>
+    
+                        <a href="https://github.com/ncajaraville7/twitter-clon" target="_blank" class="tooltip">
+                            <i class="fab fa-github"></i>
+                            <span class="tooltip-box">Ver Código</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="proyects__flex" data-aos="fade-right">
+                <div class="proyects__image">
+                    <img class="appturnos-img" src="src/images/appturnos.png" alt="App turnos">
+                </div>
+                <div class="proyects__data">
+                    <p>App desarrollada en REACT. La misma nos permite agendar turnos. Dichos turnos pueden ser editados y eliminados con sus respectivos botones. </p>
+
+                    <div class="proyects__data__networks">
+                        <a class="tooltip" href="https://app-turnos-ncajaraville.netlify.app/" target="_blank">
+                            <i class="fas fa-link"></i>
+                            <span class="tooltip-box">Ver Proyecto</span>
+                        </a>
+    
+                        <a href="https://github.com/ncajaraville7/app-turnos" target="_blank" class="tooltip">
+                            <i class="fab fa-github"></i>
+                            <span class="tooltip-box">Ver Código</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="proyects__flex" data-aos="fade-left">
+                <div class="proyects__image">
+                    <img class="myapp-img" src="src/images/myapp.png" alt="MyApp">
+                </div>
+                <div class="proyects__data">
+                    <p>App desarrollada en el curso de Javascript de Coder House. Se realiza la simulacion de un home banking. <br> La misma fue creada con HTML, SASS, BOOTSTRAP Y JAVASCRIPT. <br> Debemos crear un usuario para poder ingresar a la app. </p>
+
+                    <div class="proyects__data__networks">
+                        <a class="tooltip" href="https://ncajaraville7.github.io/MyApp/" target="_blank">
+                            <i class="fas fa-link"></i>
+                            <span class="tooltip-box">Ver Proyecto</span>
+                        </a>
+    
+                        <a href="https://github.com/ncajaraville7/MyApp" target="_blank" class="tooltip">
+                            <i class="fab fa-github"></i>
+                            <span class="tooltip-box">Ver Código</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <div class="btn__proyects">
+                <a href="https://github.com/ncajaraville7" class="btn" target="_blank"><i class="fab fa-github"></i> VER MÁS</a>
+            </div>
+
+            <!-- <div class="separator">•</div>
+            <div class="separator">•</div>
+            <div class="separator">•</div>
+            <div class="separator">•</div> -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Nicolás Cajaraville</p>
+    </footer>
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="src/js/swiper.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="src/js/menu.js"></script>
 </body>
 </html>

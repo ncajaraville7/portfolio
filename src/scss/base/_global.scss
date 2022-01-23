@@ -1,6 +1,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -25,6 +26,21 @@ a {
     font-size: 1.8rem;
 }
 
+h2 {
+    font-size: 4.5rem;
+    color: $light-blue;
+}
+
+p {
+    font-size: 1.8rem;
+    color: $gray;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
@@ -35,6 +51,7 @@ a {
     .button{
         display: flex;
         justify-content: center;
+        margin-top: 3rem;
     }
 }
 
@@ -54,4 +71,46 @@ a {
     & i {
         margin-right: 5px;
     }
+}
+
+.tooltip {
+    position: relative;
+
+    &:hover &-box{
+        display: inline-block;
+    }
+
+    &-box {
+        display: none;
+        position: absolute;
+        bottom: -4rem;
+        right: -11.6rem;
+        background-color: $gray;
+        line-height: 2rem;
+        z-index: 500;
+        text-align: center;
+        color: $black;
+        font-size: 1.4rem;
+        padding: 5px 10px;
+        width: 15rem;
+        border-radius: 5px;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -5px;
+            left: 15px;
+            border-bottom: 7px solid $gray;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+        }
+    }
+}
+
+.separator {
+    font-size: 8rem;
+    display: flex;
+    justify-content: center;
+    color: $gray;
 }

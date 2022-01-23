@@ -1,0 +1,67 @@
+.proyects {
+    margin-top: 6rem;
+
+    & h2 {
+        text-align: center;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-around;
+        gap: 3rem;
+        margin-top: 4rem;
+        background-color: $card;
+        border-radius: 2rem;
+        padding: 2rem;
+
+        @include tablet {
+            & {
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__image {
+        z-index: 100;
+    }
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+
+        &__networks {
+            display: flex;
+            gap: 4rem;
+            margin-top: 1rem;
+
+            @include tablet {
+                & {
+                    justify-content: center;
+                }
+            }
+
+            & a i  {
+                color: $gray;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.twitter-img {
+    width: 150rem;
+}
+
+.myapp-img {
+    width: 113rem;
+}
+
+.appturnos-img {
+    width: 157rem;
+}
+
+.btn__proyects {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
