@@ -85,12 +85,6 @@ img {
       border-left: 7px solid transparent;
       border-right: 7px solid transparent; }
 
-.separator {
-  font-size: 8rem;
-  display: flex;
-  justify-content: center;
-  color: #dddddd; }
-
 header {
   height: 100vh; }
 
@@ -302,12 +296,6 @@ img {
       border-left: 7px solid transparent;
       border-right: 7px solid transparent; }
 
-.separator {
-  font-size: 8rem;
-  display: flex;
-  justify-content: center;
-  color: #dddddd; }
-
 body {
   height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); }
@@ -450,6 +438,9 @@ body {
 
 .appturnos-img {
   width: 157rem; }
+
+.todo-list {
+  width: 97rem; }
 
 .btn__proyects {
   display: flex;
