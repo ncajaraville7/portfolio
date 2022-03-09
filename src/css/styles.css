@@ -415,7 +415,8 @@ body {
     max-width: 60rem; }
   .proyects__data {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    max-width: 50rem; }
     .proyects__data__networks {
       display: flex;
       gap: 4rem;
