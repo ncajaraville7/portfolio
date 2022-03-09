@@ -50,12 +50,14 @@
         </div>
 
         <section class="home" id="home">
-            <h1>Hola, <br> Soy <span>Nicolás.</span> <br> Frontend Developer </h1>
-            
-            <div class="button">
-                <a href="https://wa.link/5sbm27" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> Contactame</a>
+            <div class="home__flex">
+                <div class="home__flex__title">
+                    <h1>Hola, <br> Soy <span>Nicolás.</span> <br> Frontend Developer </h1>
+                </div>
+                <div class="home__flex__button">
+                    <a href="https://wa.link/5sbm27" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> Contactame</a>
+                </div>
             </div>
-
             <div class="home__networks">
                 <a href="https://www.linkedin.com/in/ncajaraville/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/ncajaraville7" target="_blank"><i class="fab fa-github"></i></a>
@@ -92,6 +94,49 @@
 
         <section class="proyects container" id="proyects">
             <h2>MIS PROYECTOS</h2>
+
+            <article class="proyects__flex" data-aos="fade-right">
+                <div class="proyects__image">
+                    <img class="todo-list" src="src/images/appgastos.png" alt="appgastos">
+                </div>
+                <div class="proyects__data">
+                    <p>Aplicación de gastos mensuales, la misma fue creada en REACT JS. Los gastos pueden ser filtrados, eliminados o editados deslizando la tarjeta para los costados.</p>
+
+                    <div class="proyects__data__networks">
+                        <a class="tooltip" href="https://app-gastos-ncajaraville.netlify.app/" target="_blank">
+                            <i class="fas fa-link"></i>
+                            <span class="tooltip-box">Ver Proyecto</span>
+                        </a>
+    
+                        <a href="https://github.com/ncajaraville7/gastos-app" target="_blank" class="tooltip">
+                            <i class="fab fa-github"></i>
+                            <span class="tooltip-box">Ver Código</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="proyects__flex" data-aos="fade-right">
+                <div class="proyects__image">
+                    <img class="todo-list" src="src/images/rickandmorty.png" alt="apprickandmorty">
+                </div>
+                <div class="proyects__data">
+                    <p>App creada en REACT JS, consumiendo la API de RICK AND MORTY. En la misma tenemos una barra de busqueda para encontrar un personaje en especificio, un paginador y podemos también agregar y quitar personajes a favoritos.</p>
+
+                    <div class="proyects__data__networks">
+                        <a class="tooltip" href="https://app-gastos-ncajaraville.netlify.app/" target="_blank">
+                            <i class="fas fa-link"></i>
+                            <span class="tooltip-box">Ver Proyecto</span>
+                        </a>
+    
+                        <a href="https://github.com/ncajaraville7/gastos-app" target="_blank" class="tooltip">
+                            <i class="fab fa-github"></i>
+                            <span class="tooltip-box">Ver Código</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            
             <article class="proyects__flex" data-aos="fade-right">
                 <div class="proyects__image">
                     <img src="src/images/primeburger.png" alt="prime burger">

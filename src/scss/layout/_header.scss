@@ -111,70 +111,133 @@ header {
     }
 }
 
-.home {
-    position: relative;
-    height: 80vh;
-    margin-top: 18rem;
+// .home {
+//     position: relative;
+//     height: 80vh;
+//     margin-top: 18rem;
 
-    @media (max-width: 590px) {
-        & {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-            margin: 0;
-        }
-    }
+//     @media (max-width: 590px) {
+//         & {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             flex-direction: column;
+//             height: 100vh;
+//             margin: 0;
+//         }
+//     }
 
-    & h1 {
-        font-size: 7rem;
-        color: $gray;
-        margin: 10rem 0 3rem 15rem;
+//     & h1 {
+//         font-size: 7rem;
+//         color: $gray;
+//         margin: 10rem 0 3rem 15rem;
 
-        @media (max-width: 590px) {
-            & {
-                text-align: center;
-                font-size: 8vh;
-                margin: 0;
-            }
-        }
+//         @media (max-width: 590px) {
+//             & {
+//                 text-align: center;
+//                 font-size: 8vh;
+//                 margin: 0;
+//             }
+//         }
 
-        & span {
-            color: $light-blue;
-        }
-    }
+//         & span {
+//             color: $light-blue;
+//         }
+//     }
 
-    & .btn {
-        margin: 10rem 0 3rem 15rem;
+//     & .btn {
+//         margin: 10rem 0 3rem 15rem;
 
-        @media (max-width: 590px) {
-            & {
-                margin: 0 auto;
-            }
-        }
-    }
+//         @media (max-width: 590px) {
+//             & {
+//                 margin: 0 auto;
+//             }
+//         }
+//     }
 
-    &__networks {
-        position: absolute;
-        bottom: 5rem;
-        margin: 0 0 0 15rem;
+//     &__networks {
+//         position: absolute;
+//         bottom: 5rem;
+//         margin: 0 0 0 15rem;
 
-         @include tablet {
-             & {
-                 display: none;
-             }
-         }
+//          @include tablet {
+//              & {
+//                  display: none;
+//              }
+//          }
 
-        & i {
-            color: $gray;
-            font-size: 3rem;
-            margin-right: 55px;
-            transition: .3s;
+//         & i {
+//             color: $gray;
+//             font-size: 3rem;
+//             margin-right: 55px;
+//             transition: .3s;
             
-            &:hover {
+//             &:hover {
+//                 color: $light-blue;
+//             }
+//         }
+//     }
+// }
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    margin-top: 10rem;
+    padding: 10rem 0 3rem 15rem;;
+
+    @include tablet {
+        & {
+            padding: 0;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            & {
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+        }
+
+        &__title h1 {
+            font-size: 7rem;
+            color: $gray;
+            margin-bottom: 2rem;
+
+            @include tablet {
+                & {
+                    font-size: 8vh;
+                    text-align: center;
+                }
+            }
+
+            & span {
                 color: $light-blue;
             }
+        }
+    }
+
+    &__networks i {
+        color: $gray;
+        font-size: 3rem;
+        margin-right: 55px;
+        transition: .3s;
+
+        @include tablet {
+            & {
+                display: none;
+            }
+        }
+
+        &:hover {
+            color: $light-blue;
         }
     }
 }
